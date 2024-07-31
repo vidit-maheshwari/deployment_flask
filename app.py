@@ -5,7 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app) 
 
-@app.route('/output', methods=['POST'])
+@app.route('/', methods=['POST'])
 def handlePrompt():
     data = request.get_json()
 
